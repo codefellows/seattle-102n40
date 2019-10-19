@@ -3,7 +3,10 @@ body {
 }
 
 header {
-  background-color: #B3770B;
+  background-color: rgb(78, 43, 6);
+  color: rgb(215, 219, 159);
+  font-size: 40px;
+  text-align: center;
 }
 
 h1 {
@@ -11,7 +14,18 @@ h1 {
 }
 
 nav {
-  background-color: #FFD78C;
+  background-color:  rgb(246, 234, 220);
+  margin: 0px;
+}
+
+nav ul {
+  margin: 0px;
+  list-style: none;
+}
+
+nav a {
+  color: rgb(71, 77, 1);
+  text-decoration: none;
 }
 
 main {
@@ -23,9 +37,10 @@ article img {
 }
 
 .highlight {
-  background-color: #A6CDFF;
+  background-color: rgb(248, 241, 233);
 }
 
 footer {
-  background-color: #B3770B;
+  background-color: rgb(78, 43, 6);
+  color: rgb(215, 219, 159);
 }
