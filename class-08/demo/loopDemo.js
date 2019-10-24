@@ -1,13 +1,13 @@
 // red light - we don't know when the condition will change
 
-// var lightColor = prompt('What color is the light?');
+var lightColor = prompt('What color is the light?');
 
-// while (lightColor === 'red') {
-//   console.log('Stop the car!');
-//   lightColor = prompt('What color is the light?');
-// }
+while (lightColor === 'red') {
+  console.log('Stop the car!');
+  lightColor = prompt('What color is the light?');
+}
 
-// console.log('Gooooooo!');
+console.log('Gooooooo!');
 
 // we need to do something a certain number of times. Let's do pushups!
 

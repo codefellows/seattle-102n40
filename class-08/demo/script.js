@@ -11,30 +11,6 @@ if (wantsToAdopt === 'yes') {
   document.write('<h2>Please spread the word about all these amazing animals who need homes!</h2>');
 }
 
-
-// cat html pseudocode
-
-// inputs (parameters): name, image, description
-// work: insert the name, image, and description into the tags
-// outputs (return values): an html article with name, image, description.
-
-// test case
-// parameters: 'Jacques', 'jacques.jpg', 'not the brightest but really sweet'
-
-// work:
-//<article>
-//  <h3>name</h3>
-//  <img src="image">
-//  <p>description</p>
-//</article>
-
-// return value:
-//<article>
-//  <h3>Jacques</h3>
-//  <img src="jacques.jpg">
-//  <p>not the brightest but really sweet</p>
-//</article>
-
 function createCatArticle(name, image, description) {
   var catArticle = '<article>' +
     '<h3>' + name + '</h3>' +
@@ -47,10 +23,19 @@ function createCatArticle(name, image, description) {
 
 var wantsToAdd = prompt('Hey there! Do you want to add a cat?');
 
-if (wantsToAdd === 'yes') {
+while (wantsToAdd === 'yes') {
   var catName = prompt('What is the name of the cat?');
   var catImage = prompt('What is the name of the file containing the image?');
   var catDescription = prompt('What is the description of the cat?');
   var newCat = createCatArticle(catName, catImage, catDescription);
   document.write(newCat);
+  wantsToAdd = prompt('Hey there! Do you want to add another cat?');
+}
+
+function showCatPhotos() {
+  var numberOfCatPhotos = prompt('Hey there! How many cat photos do you want to see?');
+
+  for (var i = 0; i < numberOfCatPhotos; i++) {
+    document.write('<img src="http://aws.random.cat/meow">')
+  }
 }
