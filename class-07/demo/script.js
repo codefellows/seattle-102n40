@@ -45,17 +45,6 @@ function createCatArticle(name, image, description) {
   return catArticle;
 }
 
-// variation with a placeholder photo
-// function createCatArticle(name, image, description) {
-//   var catArticle = '<article>' +
-//     '<h3>' + name + '</h3>' +
-//     '<img src="http://placekitten.com/400/300">' +
-//     '<p>' + description + '</p>' +
-//     '</article>';
-
-//   return catArticle;
-// }
-
 var wantsToAdd = prompt('Hey there! Do you want to add a cat?');
 
 if (wantsToAdd === 'yes') {
